@@ -151,4 +151,18 @@
   .form-button {
     @apply px-6 py-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl font-semibold text-lg transition-all hover:shadow-lg;
   }
+
+  /* Added shimmer animation for loading skeleton */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
 }

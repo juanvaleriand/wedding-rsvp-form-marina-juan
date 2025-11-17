@@ -1,11 +1,13 @@
 "use client"
 
 import { useState, useEffect, useMemo } from "react"
-import { Heart, MapPin, Calendar, Clock, Users } from "lucide-react"
+import { Heart, MapPin, Calendar, Clock, Users } from 'lucide-react'
 import { RSVPForm } from "@/components/rsvp-form"
 import { GuestCounter } from "@/components/guest-counter"
 import { GuestList } from "@/components/guest-list"
 import { GiftCard } from "@/components/gift-card"
+import { ImageGallery } from "@/components/image-gallery"
+import { MusicPlayer } from "@/components/music-player"
 
 type Attendance = "akan_hadir" | "tidak_hadir" | null
 
@@ -61,8 +63,29 @@ export default function Home() {
     [confirmingGuests],
   )
 
+  const galleryImages = [
+    {
+      src: "/images/couple-hero.webp",
+      alt: "Juan and Marina wedding portrait",
+    },
+    {
+      src: "/elegant-wedding-ceremony.png",
+      alt: "Wedding ceremony",
+    },
+    {
+      src: "/reception-celebration.jpg",
+      alt: "Reception celebration",
+    },
+    {
+      src: "/bride-groom-dancing.jpg",
+      alt: "Bride and groom dancing",
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background to-secondary/10">
+      <MusicPlayer />
+      
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-20 right-10 w-60 h-60 sm:w-80 sm:h-80 bg-secondary/15 rounded-full blur-3xl opacity-40"></div>
         <div className="absolute bottom-32 left-10 w-72 h-72 sm:w-96 sm:h-96 bg-accent/8 rounded-full blur-3xl opacity-30"></div>
@@ -90,6 +113,10 @@ export default function Home() {
               <div className="py-6 sm:py-8 border-t-2 border-b-2 border-white/30">
                 <p className="text-3xl sm:text-4xl md:text-5xl font-light text-primary mb-2 sm:mb-3">Holy Matrimony</p>
                 <p className="text-sm sm:text-base text-foreground/70">as they begin their new chapter together</p>
+              </div>
+
+              <div className="py-4 sm:py-6 md:py-8">
+                <ImageGallery images={galleryImages} autoPlay={true} autoPlayInterval={5000} />
               </div>
 
               <div className="space-y-4 sm:space-y-6 text-foreground/75">
