@@ -69,16 +69,12 @@ export default function Home() {
       alt: "Juan and Marina wedding portrait",
     },
     {
-      src: "/elegant-wedding-ceremony.png",
-      alt: "Wedding ceremony",
+      src: "/images/couple-hero1.webp",
+      alt: "Juan and Marina wedding portrait",
     },
     {
-      src: "/reception-celebration.jpg",
-      alt: "Reception celebration",
-    },
-    {
-      src: "/bride-groom-dancing.jpg",
-      alt: "Bride and groom dancing",
+      src: "/images/couple-hero2.webp",
+      alt: "Juan and Marina wedding portrait",
     },
   ]
 

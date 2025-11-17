@@ -8,7 +8,7 @@ interface GuestCounterProps {
 }
 
 export function GuestCounter({ totalConfirmed, totalResponses }: GuestCounterProps) {
-  const MAX_CAPACITY = 300
+  const MAX_CAPACITY = 250
 
   return (
     <div className="flex justify-center w-full">

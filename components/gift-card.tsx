@@ -9,13 +9,13 @@ export function GiftCard() {
   const bankAccounts = [
     {
       bank: "BCA",
-      accountName: "Marina [Last Name]",
-      accountNumber: "1234567890",
+      accountName: "Marina",
+      accountNumber: "8310009955",
     },
     {
-      bank: "Mandiri",
-      accountName: "Juan [Last Name]",
-      accountNumber: "0987654321",
+      bank: "BCA",
+      accountName: "Juan",
+      accountNumber: "6871825022",
     },
   ]
 
@@ -30,12 +30,8 @@ export function GiftCard() {
       <div className="bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/60 shadow-lg max-w-md">
         <div className="flex items-center justify-center gap-2 mb-6">
           <Gift className="w-6 h-6 text-primary" />
-          <h3 className="text-2xl font-light text-primary text-center">Angpao & Hadiah</h3>
+          <h3 className="text-2xl font-light text-primary text-center">Gift</h3>
         </div>
-
-        <p className="text-center text-sm text-foreground/70 mb-6 font-light">
-          Jika Anda ingin mengirimkan hadiah atau angpao, berikut adalah nomor rekening kami:
-        </p>
 
         <div className="space-y-4">
           {bankAccounts.map((account, index) => (

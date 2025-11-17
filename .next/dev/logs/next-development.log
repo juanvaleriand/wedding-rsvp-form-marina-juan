@@ -1,0 +1,42 @@
+[00:00:01.869] Server  LOG      ✓ Ready in 1515ms
+[00:00:09.438] Server  WARN    Image with src "/images/couple-hero.webp" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.438] Server  WARN    Image with src "/images/couple-hero.webp" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:00:09.439] Server  WARN    Image with src "/images/couple-hero1.webp" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.439] Server  WARN    Image with src "/images/couple-hero1.webp" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:00:09.440] Server  WARN    Image with src "/images/couple-hero2.webp" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.440] Server  WARN    Image with src "/images/couple-hero2.webp" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:00:09.440] Server  WARN    Image with src "/images/couple-hero.webp" is using quality "50" which is not configured in images.qualities [75]. Please update your config to [50, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.441] Server  WARN    Image with src "/images/couple-hero1.webp" is using quality "50" which is not configured in images.qualities [75]. Please update your config to [50, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.441] Server  WARN    Image with src "/images/couple-hero2.webp" is using quality "50" which is not configured in images.qualities [75]. Please update your config to [50, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:10.931] Browser WARN    Image with src "/images/couple-hero.webp" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:10.931] Browser WARN    Image with src "/images/couple-hero.webp" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:00:10.931] Browser WARN    Image with src "/images/couple-hero1.webp" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:10.931] Browser WARN    Image with src "/images/couple-hero1.webp" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:00:10.932] Browser WARN    Image with src "/images/couple-hero2.webp" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:10.932] Browser WARN    Image with src "/images/couple-hero2.webp" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:00:10.932] Browser WARN    Image with src "/images/couple-hero.webp" is using quality "50" which is not configured in images.qualities [75]. Please update your config to [50, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:10.932] Browser WARN    Image with src "/images/couple-hero1.webp" is using quality "50" which is not configured in images.qualities [75]. Please update your config to [50, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:10.932] Browser WARN    Image with src "/images/couple-hero2.webp" is using quality "50" which is not configured in images.qualities [75]. Please update your config to [50, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:10.932] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:10.932] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:10.932] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1763393058210}
+[00:00:17.931] Browser WARN    Image with src "/images/couple-hero.webp" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:17.931] Browser WARN    Image with src "/images/couple-hero1.webp" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:22.934] Browser WARN    Image with src "/images/couple-hero2.webp" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:03:33.027] Server  LOG      ✓ Compiled in 295ms
+[00:04:07.510] Server  LOG      ✓ Compiled in 162ms

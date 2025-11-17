@@ -20,7 +20,7 @@ interface RSVPFormProps {
   totalConfirmed?: number
 }
 
-const MAX_CAPACITY = 300
+const MAX_CAPACITY = 250
 
 export function RSVPForm({ onSubmit, totalConfirmed = 0 }: RSVPFormProps) {
   const [formData, setFormData] = useState({
