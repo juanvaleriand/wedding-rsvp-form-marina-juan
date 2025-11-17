@@ -146,7 +146,7 @@ export default function Home() {
             </div>
 
             <div className="flex justify-center">
-              <GuestCounter totalConfirmed={totalConfirmed} totalResponses={confirmingGuests.length} />
+              {/* <GuestCounter totalConfirmed={totalConfirmed} totalResponses={confirmingGuests.length} /> */}
             </div>
 
             <div className="flex justify-center">
