@@ -62,10 +62,6 @@ export function GiftCard() {
             </div>
           ))}
         </div>
-
-        <p className="text-xs text-foreground/50 text-center mt-6 font-light">
-          Terima kasih atas dukungan dan doa Anda
-        </p>
       </div>
     </div>
   )

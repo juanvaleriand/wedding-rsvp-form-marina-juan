@@ -243,7 +243,7 @@ export function RSVPForm({ onSubmit, totalConfirmed = 0 }: RSVPFormProps) {
       </Button>
 
       <p className="text-sm sm:text-base text-foreground/60 text-center">
-        Terima kasih telah mengkonfirmasi kehadiran Anda di acara istimewa kami
+        Terima kasih atas konfirmasi kehadiran Anda
       </p>
     </form>
   )
