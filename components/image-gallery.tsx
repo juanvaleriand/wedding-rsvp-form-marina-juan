@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState, useEffect, useCallback, useRef } from "react"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 interface GalleryImage {
   src: string
@@ -19,8 +19,8 @@ interface ImageGalleryProps {
 
 function ShimmerSkeleton() {
   return (
-    <div className="absolute inset-0 bg-gradient-to-r from-muted via-muted/50 to-muted animate-pulse">
-      <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+    <div className="absolute inset-0 bg-gradient-to-r from-muted via-muted/50 to-muted">
+      <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-white/30 to-transparent" />
     </div>
   )
 }
@@ -36,8 +36,8 @@ export function ImageGallery({ images, autoPlay = true, autoPlayInterval = 5000 
   const [loadingImages, setLoadingImages] = useState<Set<number>>(
     new Set(Array.from({ length: images.length }, (_, i) => i)),
   )
-  const [visibleRange, setVisibleRange] = useState({ start: 0, end: 3 })
   const observerRef = useRef<IntersectionObserver | null>(null)
+  const [scrollingImages, setScrollingImages] = useState<Set<number>>(new Set())
 
   const preloadImage = useCallback(
     (index: number) => {
@@ -58,13 +58,21 @@ export function ImageGallery({ images, autoPlay = true, autoPlayInterval = 5000 
     observerRef.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          const index = Number.parseInt(entry.target.getAttribute("data-index") || "0")
+          
           if (entry.isIntersecting) {
-            const index = Number.parseInt(entry.target.getAttribute("data-index") || "0")
+            setScrollingImages((prev) => new Set([...prev, index]))
             preloadImage(index)
+          } else {
+            setScrollingImages((prev) => {
+              const next = new Set(prev)
+              next.delete(index)
+              return next
+            })
           }
         })
       },
-      { rootMargin: "100px" },
+      { rootMargin: "150px" },
     )
 
     const thumbnails = scrollContainerRef.current?.querySelectorAll("[data-index]")
@@ -140,14 +148,14 @@ export function ImageGallery({ images, autoPlay = true, autoPlayInterval = 5000 
     >
       {/* Main Image Slider */}
       <div
-        className="relative w-full h-48 sm:h-80 md:h-96 lg:h-[500px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden bg-muted shadow-lg"
+        className="relative w-full h-48 sm:h-80 md:h-96 lg:h-[500px] rounded-lg sm:rounded-xl md:rounded-2xl bg-muted shadow-lg flex items-center justify-center"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+            className={`absolute inset-0 transition-opacity duration-700 ease-in-out overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl ring-1 ring-primary/20 ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -193,7 +201,7 @@ export function ImageGallery({ images, autoPlay = true, autoPlayInterval = 5000 
       </div>
 
       {/* Thumbnail Navigation with Scroll Lazy Loading */}
-      <div ref={scrollContainerRef} className="flex gap-1.5 sm:gap-2 md:gap-3 overflow-x-auto pb-2 px-1">
+      <div ref={scrollContainerRef} className="flex gap-1.5 sm:gap-2 md:gap-3 overflow-x-auto pb-2 px-1 justify-center">
         {images.map((image, index) => (
           <button
             key={index}
@@ -206,7 +214,7 @@ export function ImageGallery({ images, autoPlay = true, autoPlayInterval = 5000 
             }`}
             aria-label={`Go to image ${index + 1}`}
           >
-            {loadingImages.has(index) && <ShimmerSkeleton />}
+            {(loadingImages.has(index) || scrollingImages.has(index)) && <ShimmerSkeleton />}
 
             <Image
               src={image.src || "/placeholder.svg"}
