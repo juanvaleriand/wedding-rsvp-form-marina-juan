@@ -183,8 +183,8 @@ export default function Home() {
         </section>
 
         <footer className="py-12 sm:py-16 px-4 sm:px-6 text-center text-sm sm:text-base text-foreground/60 border-t border-border">
-          <p className="font-light text-base sm:text-lg">Created With Love 💌</p>
-          <p className="text-xs sm:text-sm mt-3 text-foreground/50">Marina & Juan</p>
+          <p className="font-light text-base sm:text-lg">Created With 🩷</p>
+          <p className="text-xs sm:text-sm mt-3 text-foreground/50">Juan & Marina</p>
         </footer>
       </div>
     </div>
