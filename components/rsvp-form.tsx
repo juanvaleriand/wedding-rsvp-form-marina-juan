@@ -129,7 +129,7 @@ export function RSVPForm({ onSubmit, totalConfirmed = 0 }: RSVPFormProps) {
       )}
 
       <div>
-        <label className="form-label">Nama Lengkap *</label>
+        <label className="form-label">Nama *</label>
         <input
           type="text"
           name="name"
