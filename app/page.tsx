@@ -114,19 +114,6 @@ export default function Home() {
 
             <div className="space-y-4 sm:space-y-6 text-center">
               <div className="space-y-2">
-                <p className="text-lg sm:text-xl md:text-2xl font-light text-primary">Marina</p>
-                <p className="text-xs sm:text-sm md:text-base text-foreground/70 font-light">
-                  The youngest daughter of <br className="sm:hidden" />
-                  <span className="font-medium text-foreground/80">Mr. Yanto Limong</span> &amp;
-                  <br className="sm:hidden" />
-                  <span className="hidden sm:inline"> </span>
-                  <span className="font-medium text-foreground/80">Mrs. Yeni Pitoy</span> (✞)
-                </p>
-              </div>
-              <div className="flex justify-center">
-                <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-primary/40" />
-              </div>
-              <div className="space-y-2">
                 <p className="text-lg sm:text-xl md:text-2xl font-light text-primary">Juan</p>
                 <p className="text-xs sm:text-sm md:text-base text-foreground/70 font-light">
                   The first son of <br className="sm:hidden" />
@@ -134,6 +121,19 @@ export default function Home() {
                   <br className="sm:hidden" />
                   <span className="hidden sm:inline"> </span>
                   <span className="font-medium text-foreground/80">Mrs. Roosye L Leander</span>
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-primary/40" />
+              </div>
+              <div className="space-y-2">
+                <p className="text-lg sm:text-xl md:text-2xl font-light text-primary">Marina</p>
+                <p className="text-xs sm:text-sm md:text-base text-foreground/70 font-light">
+                  The youngest daughter of <br className="sm:hidden" />
+                  <span className="font-medium text-foreground/80">Mr. Yanto Limong</span> &amp;
+                  <br className="sm:hidden" />
+                  <span className="hidden sm:inline"> </span>
+                  <span className="font-medium text-foreground/80">Mrs. Yeni Pitoy</span> (✞)
                 </p>
               </div>
             </div>
